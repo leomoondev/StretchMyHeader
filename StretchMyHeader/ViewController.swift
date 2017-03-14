@@ -13,6 +13,7 @@ private let kTableHeaderHeight: CGFloat = 300.0
 class ViewController: UITableViewController {
     var headerView: UIView!
     
+    @IBOutlet weak var dateLabel: UILabel!
     let items = [
         NewsItem(category: .World, summary: "Climate change protests, divestments meet fossil fuels realities"),
         NewsItem(category: .Europe, summary: "Scotland's 'Yes' leader says independence vote is 'once in a lifetime'"),
@@ -36,6 +37,7 @@ class ViewController: UITableViewController {
         tableView.contentInset = UIEdgeInsets(top: kTableHeaderHeight, left: 0, bottom: 0, right: 0)
         tableView.contentOffset = CGPoint(x: 0, y: -kTableHeaderHeight)
         updateHeaderView()
+        updateDateLabelView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,12 +63,6 @@ class ViewController: UITableViewController {
         return items.count
     }
     
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as UITableViewCell
-//        return cell
-//    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let item = items[indexPath.row]
@@ -84,6 +80,15 @@ class ViewController: UITableViewController {
         }
         
         headerView.frame = headerRect
+    }
+    
+    func updateDateLabelView() {
+        
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd"
+        let result = dateFormatter.string(from: date)
+        dateLabel.text = result
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
