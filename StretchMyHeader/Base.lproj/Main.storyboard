@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="75" id="XFG-vs-jV1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="75" id="XFG-vs-jV1" customClass="NewsItemCell" customModule="StretchMyHeader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XFG-vs-jV1" id="E5m-oC-FSD">
@@ -48,6 +48,10 @@
                                         <constraint firstAttribute="leadingMargin" secondItem="1Li-uX-WVO" secondAttribute="leading" id="yiI-u2-OMR"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryLabel" destination="GPS-l1-5ZH" id="nJ9-d3-AP5"/>
+                                    <outlet property="summaryLabel" destination="1Li-uX-WVO" id="eqL-7A-rj3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
