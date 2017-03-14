@@ -8,7 +8,10 @@
 
 import UIKit
 
+private let kTableHeaderHeight: CGFloat = 300.0
+
 class ViewController: UITableViewController {
+    var headerView: UIView!
     
     let items = [
         NewsItem(category: .World, summary: "Climate change protests, divestments meet fossil fuels realities"),
@@ -26,13 +29,19 @@ class ViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //tableView.rowHeight = UITableViewAutomaticDimension
+        headerView = tableView.tableHeaderView
+        tableView.tableHeaderView = nil
+        tableView.addSubview(headerView)
+        
+        tableView.contentInset = UIEdgeInsets(top: kTableHeaderHeight, left: 0, bottom: 0, right: 0)
+        tableView.contentOffset = CGPoint(x: 0, y: -kTableHeaderHeight)
+        updateHeaderView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -65,6 +74,16 @@ class ViewController: UITableViewController {
         cell.newsItem = item
         
         return cell
+    }
+    
+    func updateHeaderView() {
+        var headerRect = CGRect(x: 0, y: -kTableHeaderHeight, width: tableView.bounds.width, height: kTableHeaderHeight)
+        if tableView.contentOffset.y < -kTableHeaderHeight {
+            headerRect.origin.y = tableView.contentOffset.y
+            headerRect.size.height = -tableView.contentOffset.y
+        }
+        
+        headerView.frame = headerRect
     }
 
 }
