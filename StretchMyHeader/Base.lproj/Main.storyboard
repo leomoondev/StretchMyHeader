@@ -18,9 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="yN5-La-Xwj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-header.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r2h-5I-zdn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 24" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y7-aU-A45">
+                                    <rect key="frame" x="20" y="20" width="163.5" height="29"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="r2h-5I-zdn" firstAttribute="top" secondItem="yN5-La-Xwj" secondAttribute="top" id="6pH-iG-eXW"/>
+                                <constraint firstItem="8Y7-aU-A45" firstAttribute="leading" secondItem="yN5-La-Xwj" secondAttribute="leading" constant="20" id="Uns-Jc-GFV"/>
+                                <constraint firstAttribute="trailing" secondItem="r2h-5I-zdn" secondAttribute="trailing" id="dBh-fA-Dcg"/>
+                                <constraint firstItem="r2h-5I-zdn" firstAttribute="leading" secondItem="yN5-La-Xwj" secondAttribute="leading" id="giY-sd-q0k"/>
+                                <constraint firstItem="8Y7-aU-A45" firstAttribute="top" secondItem="yN5-La-Xwj" secondAttribute="top" constant="20" id="gzf-2J-zQD"/>
+                                <constraint firstAttribute="bottom" secondItem="r2h-5I-zdn" secondAttribute="bottom" id="uZV-77-fS4"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="75" id="XFG-vs-jV1" customClass="NewsItemCell" customModule="StretchMyHeader" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="328" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XFG-vs-jV1" id="E5m-oC-FSD">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
@@ -65,4 +89,7 @@
             <point key="canvasLocation" x="176.80000000000001" y="72.413793103448285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg-header.jpg" width="621" height="412"/>
+    </resources>
 </document>
