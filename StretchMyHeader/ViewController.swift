@@ -85,6 +85,10 @@ class ViewController: UITableViewController {
         
         headerView.frame = headerRect
     }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        updateHeaderView()
+    }
 
 }
 
