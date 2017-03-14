@@ -14,38 +14,38 @@
         <scene sceneID="BQU-NH-bs5">
             <objects>
                 <tableViewController id="LlY-7D-oKF" customClass="ViewController" customModule="StretchMyHeader" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pxV-lu-auR">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="pxV-lu-auR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="XFG-vs-jV1">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="75" id="XFG-vs-jV1">
+                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XFG-vs-jV1" id="E5m-oC-FSD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entertainment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-l1-5ZH">
-                                            <rect key="frame" x="8" y="0.0" width="122" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dystopian films continue rule over box office with 'Maze Runner'" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Li-uX-WVO">
-                                            <rect key="frame" x="8" y="22" width="359" height="40.5"/>
+                                            <rect key="frame" x="8" y="30" width="359" height="40.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entertainment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-l1-5ZH">
+                                            <rect key="frame" x="8" y="8" width="122" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="leadingMargin" secondItem="1Li-uX-WVO" secondAttribute="leading" id="56U-e2-AST"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="GPS-l1-5ZH" secondAttribute="trailing" constant="237" id="Bir-ju-r1B"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="1Li-uX-WVO" secondAttribute="trailing" id="LXy-kM-zTV"/>
-                                        <constraint firstAttribute="leadingMargin" secondItem="GPS-l1-5ZH" secondAttribute="leading" id="YiJ-tb-xdy"/>
-                                        <constraint firstItem="1Li-uX-WVO" firstAttribute="top" secondItem="GPS-l1-5ZH" secondAttribute="bottom" constant="1" id="c1X-Zi-krp"/>
-                                        <constraint firstItem="GPS-l1-5ZH" firstAttribute="top" secondItem="E5m-oC-FSD" secondAttribute="topMargin" constant="-8" id="fKx-GE-VKn"/>
+                                        <constraint firstAttribute="topMargin" secondItem="GPS-l1-5ZH" secondAttribute="top" id="N3C-Mh-0Kk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="GPS-l1-5ZH" secondAttribute="trailing" constant="237" id="TUm-9Y-f9A"/>
+                                        <constraint firstItem="1Li-uX-WVO" firstAttribute="top" secondItem="GPS-l1-5ZH" secondAttribute="bottom" constant="1" id="Y8D-j3-dbY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1Li-uX-WVO" secondAttribute="trailing" id="fEe-6q-4Gj"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="GPS-l1-5ZH" secondAttribute="leading" id="vq8-Ey-8zs"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="1Li-uX-WVO" secondAttribute="leading" id="yiI-u2-OMR"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
