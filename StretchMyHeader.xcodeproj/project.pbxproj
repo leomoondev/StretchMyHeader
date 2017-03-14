@@ -13,6 +13,8 @@
 		DAF238A61E786333002FA6B2 /* StretchMyHeader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAF238A41E786333002FA6B2 /* StretchMyHeader.xcdatamodeld */; };
 		DAF238A81E786333002FA6B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF238A71E786333002FA6B2 /* Assets.xcassets */; };
 		DAF238AB1E786333002FA6B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF238A91E786333002FA6B2 /* LaunchScreen.storyboard */; };
+		DAF238B31E787339002FA6B2 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF238B21E787339002FA6B2 /* NewsItem.swift */; };
+		DAF238B51E7873C8002FA6B2 /* NewsItemCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF238B41E7873C8002FA6B2 /* NewsItemCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DAF238A71E786333002FA6B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF238AA1E786333002FA6B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAF238AC1E786333002FA6B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF238B21E787339002FA6B2 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		DAF238B41E7873C8002FA6B2 /* NewsItemCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItemCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DAF238A91E786333002FA6B2 /* LaunchScreen.storyboard */,
 				DAF238AC1E786333002FA6B2 /* Info.plist */,
 				DAF238A41E786333002FA6B2 /* StretchMyHeader.xcdatamodeld */,
+				DAF238B21E787339002FA6B2 /* NewsItem.swift */,
+				DAF238B41E7873C8002FA6B2 /* NewsItemCellTableViewCell.swift */,
 			);
 			path = StretchMyHeader;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF238A01E786333002FA6B2 /* ViewController.swift in Sources */,
+				DAF238B51E7873C8002FA6B2 /* NewsItemCellTableViewCell.swift in Sources */,
+				DAF238B31E787339002FA6B2 /* NewsItem.swift in Sources */,
 				DAF2389E1E786333002FA6B2 /* AppDelegate.swift in Sources */,
 				DAF238A61E786333002FA6B2 /* StretchMyHeader.xcdatamodeld in Sources */,
 			);
